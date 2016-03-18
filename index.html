@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Glossator</title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css"></script>
+  <meta charset="UTF-8" lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body>
+   <nav class="navbar navbar-default navbar-static-top">
+    <h4 class="navbar-text"><a class="navbar-brand" href=#>Home</a></h4>
+    <p class="navbar-text navbar-right dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Words
+        <span class="caret"></span>
+    </p>
+    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu">
+        <li role="separator" class="divider"></li>
+        <li><a href="flashcards.html">View as Flashcards</a></li>
+        <li id="remover">Remove Words</li>
+    </ul>
+   </nav>
+  <h2>Goodbye, My Friend, Goodbye <small>Sergei Aleksandrovich Esenin</small></h2>
+  <hr>
+  <div class="container">
+  <div class="col-xs-4 content">
+    <p>Goodbye, my friend, goodbye</p>
+    <p>My love, you are in my heart. </p>
+    <p>It was preordained we should part</p>
+    <p>And be reunited by and by.</p>
+    <p>Goodbye: no handshake to endure.</p>
+    <p>Let's have no sadness — furrowed brow.</p>
+    <p>There's nothing new in dying now</p>
+    <p>Though living is no newer.</p>
+  </div>
+  <div class="col-xs-4 content">
+    <p>До свиданья, друг мой, до свиданья.</p>
+    <p>Милый мой, ты у меня в груди.</p>
+    <p>Предназначенное расставанье</p>
+    <p>Обещает встречу впереди.</p>
+    <p>До свиданья, друг мой, без руки, без слова,</p>
+    <p>Не грусти и не печаль бровей,</p>
+    <p>В этой жизни умирать не ново,</p>
+    <p>Но и жить, конечно, не новей.</p>
+  </div>
+  <div class="col-xs-3 col-xs-offset-1 content">
+  <form>
+    <br>
+    <label>Look up an unfamiliar word here:</label> <br>
+    <input type="text" placeholder="Search">
+    <input type="submit" value="Search" class="btn btn-info btn-sm"><br>
+    <a href="http://translate.yandex.com/">Powered by Yandex.Translate</a> <br>
+  </form> <br>
+  <form>
+    <label>Select language:</label> <br>
+    <input type="radio" value="ru-en" name="language-selector" checked> Russian to English <br>
+    <input type="radio" value="en-ru" name="language-selector"> English to Russian
+  </form>
+  <div>
+    <h3 id="translatedWord">Привет!</h3>
+    <p id="translation">Translation: Hi!</p>
+    <button class="btn btn-primary btn-sm">Add to my word list</button>
+  </div>
+  </div>
+  <!--place footer here -->
+  <script src="script.js"></script>  
+</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Flash Cards</title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="flashcard.css"></script>
+  <meta charset="UTF-8" lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body>
+<nav class="navbar navbar-default navbar-static-top">
+      <h4 class="navbar-text"><a class="navbar-brand" href=#>Home</a></h4>
+</nav>
+<div class="container">
+  <div class="card-container">
+    <div class="card-front revealed">
+    </div>
+    <div class="card-back concealed"> 
+    </div>
+  </div>
+  <br>
+  <button class="btn btn-sm btn-default center-block">Flip card</button>
+  <hr>
+  <div class="col-xs-4 col-xs-offset-4">
+    <form>
+      <label for="difficulty">Select Difficulty Level:</label>
+      <div class="input-group input-group-sm">
+      <span class="input-group-btn"><button class="btn btn-primary">Go</button></span>
+      <select name="difficulty" class="form-control">
+          <option value="hard">Hard, show me again</option>
+          <option value="easy">Easy, don't show again</option>
+      </select>
+      </div>
+    </form>
+  </div>
+  <script src="flashcard.js"></script> 
+</body>
+</html>

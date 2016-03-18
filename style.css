@@ -1,0 +1,53 @@
+
+.glyphicon {
+  padding: 5px;
+  font-size: 35px;
+}
+nav {
+  height: 60px;
+}
+
+.dropdown-toggle {
+  margin-right: 5%;
+}
+.dropdown-menu>li>a {
+  padding: 3px 0px;
+}
+.dropdown-menu>li {
+  padding: 0 5px;
+}
+/* //http://victoria78.35photo.ru/photos/20111203/292186.jpg 
+http://rasp.35photo.ru/photos/20150916/962497.jpg
+https://upload.wikimedia.org/wikipedia/commons/a/a6/Oymyakon_forests.jpg
+*/
+.btn-primary {
+  margin: 10px;
+}
+body::before {
+  content: "";
+  background: url(http://polaranimals.pbworks.com/f/IMG_1410.JPG);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;   
+}
+h2 ~ * {
+  font-weight: 600;
+} 
+
+.container {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 5px;
+}
+
+.content{
+  display: table-cell;
+  float: none;
+  height: 100%;
+  background: rgba(119,136,153,.5);
+}
+
+#remover:hover {
+  background-color: lightgray;
+}
